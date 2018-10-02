@@ -1,0 +1,704 @@
+
+<style>
+    
+a.card_actionbtn{
+    display: none !important;
+}
+    
+.top-navbar-xlarge body{
+    padding-top: 0px !important;
+}
+    
+.paper-shadow {
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.17);
+}
+   
+.error-msg-notes{
+    text-align: center;
+    font-size: 20px;
+    color: #f00;
+    padding-bottom: 30px;
+}
+    
+.error-msg-questions{
+    text-align: center;
+    font-size: 20px;
+    color: #f00;
+    padding-bottom: 30px;
+}
+    
+.navbar-default .navbar-nav.navbar-nav-bordered > li{
+    border-right: none;
+}
+    
+</style>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default  navbar-size-large navbar-size-xlarge paper-shadow" data-z="0" data-animated role="navigation" style="margin-bottom:0px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand navbar-brand-logo app_logo" style="border:none;width: 225px;float: left;">
+        <a href="#"><img src="images/skillogic_logo.png"></a>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
+          <!-- user -->
+          <li class="dropdown user">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li ui-sref-active="active"><a ui-sref="website-student.dashboard"><i class="fa fa-bar-chart-o"></i> Dashboard</a></li>
+              <li ui-sref-active="active"><a ui-sref="website-student.courses"><i class="fa fa-mortar-board"></i> My Courses</a></li>
+              <li ui-sref-active="active"><a ui-sref="website-student.private-profile"><i class="fa fa-user"></i> Profile</a></li>
+              <li><a ui-sref="login"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+          </li>
+          <!-- // END user -->
+        </ul>
+        <!--<a ui-sref="login" class="navbar-btn btn btn-primary">Log In</a>-->
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+
+  </div>
+</div>
+
+
+<div class="parallax bg-white page-section course_browse">
+  <div class="container" data-opacity="true">
+    <div class="media v-middle" >
+      <div class="media-body Detls-course">
+        <h1 class="text-display-2 margin-none"> Course Details </h1>
+        <a ui-sref=""  style="float:left;">
+             <img src="images/skillogic_addbanner.jpg" width="200" height="100">
+         </a>
+          
+      </div>
+        <div class="nameof_Course">
+        <h3>Java</h3>
+        </div>
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 watchpanel paddlr0 About_Course" style="width:80%;">
+           
+                    
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewschedulepart paddlr0 assigned_Date"  onclick="getTrSlots(191906)">
+                        <small class="title">Assigned On</small>
+                        <label> 10<sup>th</sup> June '16 </label>
+                    </div>
+                    
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewschedulepart paddlr0 exipired_Date" onclick="getTrSlots(191906)">
+                        <small class="title">Expiry On</small>
+                        <label>20 <sup>th</sup> Aug '16</label>
+                    </div>
+           
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewschedulepart paddlr0 exipired_Date" onclick="getTrSlots(191906)">
+                        <small class="title">Course Type</small>
+                        <label>Public</label>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewdetailtrainingbutton paddlr0 percentg-complete" onclick="openEventDetails1(191906)">
+                    <small class="title percentg-progress">50%</small>
+                    <div id="lesson_video_progress3"></div>
+                    <label> Completed </label>
+                    </div>
+                     
+           <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 view-certificate-btn">
+            <div class="media-right certificate_btn btn_viewcertificate">
+            <a href="#View_certificate_modal" data-toggle="modal" class="btn btn-primary paper-shadow relative" data-z="0.5" data-hover-z="1" href=""><i class="fa fa-bars cerficate-icon"></i><span> View Certificate </span> </a>
+            </div> 
+        </div>
+        </div> 
+        
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="page-section">
+    <div class="row">
+        
+      <div class="col-md-8" style="padding:0px;">
+
+        <!-- Tabbable Widget -->
+        <div class="tabbable paper-shadow">
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#Syllabus-data" data-toggle="tab"> Syllabus </a></li>
+            <li><a href="#Notes-data" data-toggle="tab"> Notes </a></li>
+            <li><a href="#Questions-data" data-toggle="tab"> Questions </a></li>
+            
+          </ul>
+          <!-- // END Tabs -->
+
+          <!-- Panes -->
+        <div class="tab-content syllabus-data" style="padding:20px 0px 0px;">
+            
+        <div id="Syllabus-data" class="tab-pane active">
+            <div id="billing">
+            <form action="#" class="form-horizontal">
+            <ul class="list-group List_Lesson" data-hover-z="0.5">
+              <li class="list-group-item pad_bor_none">
+        <div class="panel panel-default curriculum open paper-shadow remove-shadow" data-z="0.5">
+          <div class="panel-heading panel-heading-gray padtop0" data-toggle="collapse" data-target="#curriculum-1" style="height:auto;">
+            <div class="media">
+              <div class="media-left">
+                <span class="collapse_plusicon"><i class="fa fa-plus"></i></span>
+                <span class="collapse_plusicon"><i class="fa fa-minus"></i></span>
+               </div>
+              <div class="media-body">
+                <h4 class="text-headline lesson_title"> Lesson 1 </h4>
+                <div id="lesson_completion_bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="list-group collapse in" id="curriculum-1">
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left video-progress">
+                <div id="lesson_video_progress"></div>
+                  <span class="lesson_play_icon md-play-arrow"></span>
+              </div>
+              <div class="media-body video-instalation">
+                Installation
+              </div>
+                <div class="time-min">
+                
+                    <div class="width-100  text-caption ">2:03 min</div>
+                
+                </div>
+              <div class="media-right div-view-btn">
+                  <button class="btn btn-primary btn-view-detail" ui-sref="website-courses.single">View</button>
+                  
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+                <div id="lesson_video_progress_2"></div>
+                  <span class="lesson_play_icon md-play-arrow"></span>
+              </div>
+              <div class="media-body">
+                The MVC architectural pattern
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">25:01 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+                
+              </div>
+              <div class="media-body">
+               Database Models
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">12:10 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                 Database Access
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">1:25 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                Eloquent Basics
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">22:30 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="website-student.take-quiz">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                 Take Quiz
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">10:00 min</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </li>
+                           
+              <li class="list-group-item pad_bor_none">
+                  
+                 <div class="panel panel-default curriculum open paper-shadow remove-shadow" data-z="0.5">
+          <div class="panel-heading panel-heading-gray padtop0" data-toggle="collapse" data-target="#curriculum-2" style="height:auto;">
+            <div class="media">
+              <div class="media-left">
+                <span class="collapse_plusicon"><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="media-body">
+                <h4 class="text-headline lesson_title"> Lesson 2 </h4>
+              </div>
+            </div>
+           
+          </div>
+          <div class="list-group collapse in" id="curriculum-2">
+             <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+                
+              </div>
+              <div class="media-body">
+               Database Models
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">12:10 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                 Database Access
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">1:25 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                Eloquent Basics
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">22:30 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="website-student.take-quiz">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                 Take Quiz
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">10:00 min</div>
+              </div>
+            </div>
+          </div>
+        </div>
+                  
+            </li>
+                           
+    <li class="list-group-item pad_bor_none">
+        <div class="panel panel-default curriculum open paper-shadow remove-shadow" data-z="0.5">
+    <div class="panel-heading panel-heading-gray padtop0" data-toggle="collapse" data-target="#curriculum-3" style="height:auto;">
+            <div class="media">
+              <div class="media-left">
+                <span class="collapse_plusicon"><i class="fa fa-plus"></i></span>
+              </div>
+              <div class="media-body">
+                <h4 class="text-headline lesson_title"> Lesson 3 </h4>
+              </div>
+            </div>
+           
+    </div>
+          <div class="list-group collapse in" id="curriculum-3">
+             <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+                
+              </div>
+              <div class="media-body">
+               Database Models
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">12:10 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                 Database Access
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">1:25 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="::$state.current.name::">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                Eloquent Basics
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">22:30 min</div>
+              </div>
+            </div>
+            <div class="list-group-item media" data-target="website-student.take-quiz">
+              <div class="media-left">
+               
+              </div>
+              <div class="media-body">
+                 Take Quiz
+              </div>
+              <div class="media-right">
+                <div class="width-100 text-right text-caption">10:00 min</div>
+              </div>
+            </div>
+          </div>
+        </div>
+              </li>
+             
+            </ul>
+          <!--</div>-->	       
+        </form>
+        </div>
+    </div>
+            
+            
+        <div id="Notes-data" class="tab-pane">
+            
+            <form action="#" class="form-horizontal">
+  
+        <div class="panel panel-default boder-panel">
+            <ul class="list-group">
+            <li class="list-group-item">
+                <div class="media-left" style="width:100%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                <div class="media-right timefornotes">
+                      <div class="width-100 text-right">
+                       <span class="text-caption text-light">2 min ago</span>
+                      </div>
+                    </div>
+                  <p style="padding-top:10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut
+                </p>
+                  
+                </li>
+                   <li class="list-group-item">
+                       <div class="media-left" style="width:100%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  
+                    <div class="media-right timefornotes">
+                      <div class="width-100 text-right">
+                       <span class="text-caption text-light">15 min ago</span>
+                      </div>
+                    </div>
+                  <p style="padding-top:10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut
+                </p>
+                  
+                </li>
+                   <li class="list-group-item">
+                       <div class="media-left" style="width:100%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  
+                    <div class="media-right timefornotes">
+                      <div class="width-100 text-right">
+                       <span class="text-caption text-light">20 min ago</span>
+                      </div>
+                    </div>
+                  <p style="padding-top:10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut
+                 </p>
+                  
+                </li>
+                
+                <li class="list-group-item">
+                <div class="media-left" style="width:100%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  
+                    <div class="media-right timefornotes">
+                      <div class="width-100 text-right">
+                       <span class="text-caption text-light">57 min ago</span>
+                      </div>
+                    </div>
+                  <p style="padding-top:10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut </p>
+                  
+                </li>
+                
+                
+                <li class="list-group-item">
+                  <div class="media-left" style="width:100%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                    <div class="media-right timefornotes">
+                      <div class="width-100 text-right">
+                       <span class="text-caption text-light">35 min ago</span>
+                      </div>
+                    </div>
+                  <p style="padding-top:10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut</p>
+                  
+                </li>
+                
+                <li class="list-group-item">
+                  <div class="media-left" style="width:100%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                    <div class="media-right timefornotes">
+                      <div class="width-100 text-right">
+                       <span class="text-caption text-light">57 min ago</span>
+                      </div>
+                    </div>
+                  <p style="padding-top:10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut</p>
+                  
+                </li>
+                
+              </ul>
+
+            </div>
+    </form>
+            
+            <div class="error-msg-notes">
+                
+              Sorry, No notes avilable here
+                
+            </div>
+            
+        </div>
+           
+        <div id="Questions-data" class="tab-pane">
+            
+             <form action="#" class="form-horizontal">
+  
+         <div class="panel panel-default boder-panel">
+              <ul class="list-group">
+                <li class="list-group-item">
+                    <div class="media-left" style="width:84%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  <div class="media v-middle margin-v-0-10" style="width:100%;">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                        <span class="width-25 text-caption text-light question-timings">35 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>
+                        
+                        <p class="answr-ques">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut. </p>    
+                    </div>
+                  </div>
+                                  
+                </li>
+                  
+                 <li class="list-group-item">
+                     <div class="media-left" style="width:84%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  <div class="media v-middle margin-v-0-10" style="width:100%;">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>
+                  <p class="answr-ques">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut.</p>    
+                    </div>
+                  </div>
+                                  
+                </li>
+                  
+                 <li class="list-group-item">
+                     <div class="media-left" style="width:84%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  <div class="media v-middle margin-v-0-10" style="width:100%;">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small> 
+                    </div>
+                  </div>
+                                  
+                </li>
+                 <li class="list-group-item">
+                     <div class="media-left" style="width:84%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  <div class="media v-middle margin-v-0-10" style="width:100%;">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>
+                  <p class="answr-ques">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut</p>    
+                    </div>
+                  </div>
+                                  
+                </li>
+                 <li class="list-group-item">
+                     <div class="media-left" style="width:84%;float:left;">
+                   <span class="Lesson_Name">Lesson Name</span>
+                    <span class="Topic-Name">Topic Name</span>
+                </div>
+                  <div class="media v-middle margin-v-0-10" style="width:100%;">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>  
+                    </div>
+                  </div>
+                                  
+                </li>
+                 
+                  
+              </ul>
+
+            </div>  
+    </form>
+            
+            <div class="error-msg-questions">
+                
+              Sorry, No Questions avilable here
+            
+            </div>
+            
+        </div>
+            
+        </div>
+          <!-- // END Panes -->
+
+        </div>
+        <!-- // END Tabbable Widget -->
+
+      
+      </div>
+        
+      <div class="col-md-3 courses_trending">
+        
+        <h4 style="margin-top:-26px;">Trending Courses</h4>
+          
+           <ul> 
+               <li>
+            <div class="trending_courses">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+                   </li>
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+               
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+               
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+        </ul>
+        
+     </div>
+    
+    </div>
+  </div>
+</div>
+
+
+<!-- Certificate Popup  -->
+     <div class="modal grow modal-backdrop-white fade certificate_modal" id="modal-update-credit-card">
+         
+        <div class="modal-dialog modal-md">
+            <div class="v-cell">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title"> Certificate </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="certificate_modal_bdy">
+                        <h4> Your Certificate is locked! </h4>
+                      <div class="cer_img"> <img src="images/certificate-lock.png" /> </div>
+                      <div class="cer_content">
+                          <h4> To Unlock Your Certificate </h4>
+                          <span> Complate 85% of the Course </span><br>
+                          
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
+    </div>
+<!--   end of certificate popup     -->
+
+
+<!-- Certificate Popup after 85%  -->
+     <div class="modal grow modal-backdrop-white fade certificate_modal" id="View_certificate_modal">
+         
+        <div class="modal-dialog modal-md">
+            <div class="v-cell">
+              <div class="modal-content">
+                <div class="modal-header">
+<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title"> Certificate </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="certificate_modal_bdy">
+                        <h4> Your Certificate is Ready for download  </h4>
+                      <div class="pdf-img"> <img src="images/PDF-Icon.jpg" width="50" style="cursor:pointer;"/> </div>
+                      
+                      <div class="btn btn-default Cert_D_L">Download</div>
+                      <div class="cer_content">
+                          <span> Your Certificate is also sent to your registered Mail id. </span><br>
+                          
+                      </div>
+                    </div>
+                </div>
+                  <div class="modal-footer btn-for-footer">
+                  
+                  <button class="btn btn-info ok_button" data-dismiss="modal">Ok</button>
+                      
+                  </div>
+                  
+              </div>
+            </div>
+          </div>
+         
+    </div>
+<!--   end of certificate popup     -->

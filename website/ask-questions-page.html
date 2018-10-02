@@ -1,0 +1,542 @@
+
+
+
+<style>
+a.card_actionbtn{
+    display: none !important;
+}
+    .top-navbar-xlarge body{
+        padding-top: 0px !important;
+        
+    }
+</style>
+<!-- Fixed navbar -->
+<div class="navbar navbar-default  navbar-size-large navbar-size-xlarge paper-shadow" data-z="0" data-animated role="navigation" style="margin-bottom:0px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand navbar-brand-logo app_logo" style="border:none;width: 225px;float: left;">
+        <a href="#"><img src="images/skillogic_logo.png"></a>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      <div class="navbar-right">
+        <ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
+          <!-- user -->
+          <li class="dropdown user">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" role="menu">
+              <li ui-sref-active="active"><a ui-sref="website-student.dashboard"><i class="fa fa-bar-chart-o"></i> Dashboard</a></li>
+              <li ui-sref-active="active"><a ui-sref="website-student.courses"><i class="fa fa-mortar-board"></i> My Courses</a></li>
+              <li ui-sref-active="active"><a ui-sref="website-student.private-profile"><i class="fa fa-user"></i> Profile</a></li>
+              <li><a ui-sref="login"><i class="fa fa-sign-out"></i> Logout</a></li>
+            </ul>
+          </li>
+          <!-- // END user -->
+        </ul>
+        <a ui-sref="login" class="navbar-btn btn btn-primary">Log In</a>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+
+  </div>
+</div>
+
+<div class="parallax bg-white page-section course_browse">
+  <div class="container" data-opacity="true">
+    <div class="media v-middle" >
+      <div class="media-body Detls-course">
+        <h1 class="text-display-2 margin-none"> Course Details </h1>
+        <a ui-sref=""  style="float:left;">
+             <img src="images/skillogic_addbanner.jpg" width="200" height="100">
+         </a>
+          
+      </div>
+        <div class="nameof_Course">
+        <h3>Java</h3>
+        </div>
+       <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 watchpanel paddlr0 course-detail About_Course" style="width:80%">
+           
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewschedulepart paddlr0 assigned_Date"  onclick="getTrSlots(191906)" style="padding-left:0px;">
+                        <small class="title">Assigned On</small>
+                        <label> 10<sup>th</sup> June '16 </label>
+                    </div>
+                    
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewschedulepart paddlr0  exipired_Date" onclick="getTrSlots(191906)">
+                        <small class="title">Expiry On</small>
+                        <label>20 <sup>th</sup> Aug '16</label>
+                    </div>
+                    
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewschedulepart paddlr0 exipired_Date" onclick="getTrSlots(191906)">
+                        <small class="title">Course Type</small>
+                        <label>Public</label>
+                    </div>
+
+                    <div class="col-lg-2 col-sm-2 col-xs-2 watchinnerwrapper viewdetailtrainingbutton paddlr0 percentg-complete" onclick="openEventDetails1(191906)">
+                    <small class="title percentg-progress" >50%</small>
+                        <div id="lesson_video_progress5"></div>
+                    <label> Completed </label>
+                    </div>
+           
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 view-certificate-btn">
+                    <div class="media-right certificate_btn">
+                    <a href="#modal-update-credit-card" data-toggle="modal" class="btn btn-primary paper-shadow relative" data-z="0.5" data-hover-z="1" href=""><i class="fa fa-bars cerficate-icon"></i><span> View Certificate </span> </a>
+                    </div> 
+                    </div>
+    </div> 
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+
+  <div class="page-section">
+    <div class="row">
+
+      <div class="col-md-8">
+
+        <!-- Tabbable Widget -->
+        <div class="tabbable paper-shadow relative" data-z="0.5">
+
+          <!-- Tabs -->
+          <ul class="nav nav-tabs">
+            <li class="active" ui-sref-active="active"><a ui-sref="website-courses.list"><span class=""> Syllabus</span></a></li>
+            <li ui-sref-active="active"><a ui-sref="website-take-notes-page"><span class="">Notes</span></a></li>
+            <li ui-sref-active="active"><a ui-sref="website-ask-questions-page"><span class="">Questions</span></a></li>
+          </ul>
+          <!-- // END Tabs -->
+
+          <!-- Panes -->
+<div class="tab-content" style="padding:20px 0px;">
+<div  class="tab-pane active">
+    <form action="#" class="form-horizontal">
+  
+         <div class="panel panel-default boder-panel">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <div class="media v-middle margin-v-0-10">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                        <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>
+                        
+                        <p class="answr-ques">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut. </p>    
+                    </div>
+                  </div>
+                                  
+                </li>
+                 <li class="list-group-item">
+                  <div class="media v-middle margin-v-0-10">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>
+                  <p class="answr-ques">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut.</p>    
+                    </div>
+                  </div>
+                                  
+                </li>
+                 <li class="list-group-item">
+                  <div class="media v-middle margin-v-0-10">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small> 
+                    </div>
+                  </div>
+                                  
+                </li>
+                 <li class="list-group-item">
+                  <div class="media v-middle margin-v-0-10">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>
+                  <p class="answr-ques">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut</p>    
+                    </div>
+                  </div>
+                                  
+                </li>
+                 <li class="list-group-item">
+                  <div class="media v-middle margin-v-0-10">
+                    <div class="media-body">
+                      <p class="text-subhead">
+                        <!--<span class="width-75"> Question Title Comes here...  </span>-->
+                       <span class="width-25 text-caption text-light question-timings"> 57 min ago</span>
+                      </p>
+                        <small style="font-size:12px;display:block;margin-bottom:10px;"> <b> Q.  </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium alias, blanditiis eligendi expedita ipsam minus non numquam quidem reiciendis ut? </small>  
+                    </div>
+                  </div>
+                                  
+                </li>
+                 
+                  
+              </ul>
+
+            </div>  
+    </form>
+</div>
+</div>
+</div>
+        <!-- // END Tabbable Widget -->
+          
+        <br/>
+        <br/>
+          
+      </div>
+        
+      <div class="col-md-3 courses_trending">
+        
+        <h4 style="margin-top:-26px;">Trending Courses</h4>
+           <ul> 
+               <li>
+            <div class="trending_courses">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+                   </li>
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+               
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+               
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+        </ul>
+        
+    </div>
+        
+          <div class="col-md-3" style="display:none;">
+
+        <div class="panel panel-default" data-toggle="panel-collapse" data-open="true">
+          <div class="panel-heading panel-collapse-trigger">
+            <h4 class="panel-title">Category</h4>
+          </div>
+          <div class="panel-body list-group">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge pull-right">120+</span>
+                <a class="list-group-link" href="index.html">Design</a>
+              </li>
+              <li class="list-group-item active">
+                <span class="badge pull-right">30+</span>
+                <a class="list-group-link" href="index.html">Programming</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">40+</span>
+                <a class="list-group-link" href="index.html">WordPress</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">60+</span>
+                <a class="list-group-link" href="index.html">Workflow</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">15+</span>
+                <a class="list-group-link" href="index.html">HTML</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">25+</span>
+                <a class="list-group-link" href="index.html">CSS</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">35+</span>
+                <a class="list-group-link" href="index.html">iOS</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">20+</span>
+                <a class="list-group-link" href="index.html">Free</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel panel-default" data-toggle="panel-collapse" data-open="false">
+          <div class="panel-heading panel-collapse-trigger">
+            <h4 class="panel-title">Price</h4>
+          </div>
+          <div class="panel-body">
+            <div class="form-group input-group margin-none">
+              <div class="row margin-none">
+                <div class="col-xs-6 padding-none">
+                  <input class="form-control" type="text" placeholder="Min .." />
+                </div>
+                <div class="col-xs-6 padding-none">
+                  <input class="form-control" type="text" placeholder="Max .." />
+                </div>
+              </div>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Featured</h4>
+        <div class="slick-basic slick-slider" data-items="1" data-items-lg="1" data-items-md="1" data-items-sm="1" data-items-xs="1">
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-default"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-default">
+                        <span class="v-center">
+                            <i class="fa fa-github"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-white btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Github Webhooks for Beginners</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-primary"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-primary">
+                        <span class="v-center">
+                            <i class="fa fa-css3"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-primary btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Awesome CSS with LESS Processing</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-lightred"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-lightred">
+                        <span class="v-center">
+                            <i class="fa fa-windows"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-red-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Portable Environments with Vagrant</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-brown"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-brown">
+                        <span class="v-center">
+                            <i class="fa fa-wordpress"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-orange-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">WordPress Theme Development</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-purple"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-purple">
+                        <span class="v-center">
+                            <i class="fa fa-jsfiddle"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-purple-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Modular JavaScript with Browserify</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-default"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-default">
+                        <span class="v-center">
+                            <i class="fa fa-cc-visa"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-white btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Easy Online Payments with Stripe</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    
+
+    </div>
+  </div>
+
+</div>
+
+
+<!-- Certificate Popup  -->
+     <div class="modal grow modal-backdrop-white fade certificate_modal" id="modal-update-credit-card">
+        <div class="modal-dialog modal-md">
+            <div class="v-cell">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                  <h4 class="modal-title"> Certificate </h4>
+                </div>
+                <div class="modal-body">
+                  <div class="certificate_modal_bdy">
+                        <h4> Your Certificate is locked! </h4>
+                      <div class="cer_img"> <img src="images/certificate-lock.png" /> </div>
+                      <div class="cer_content">
+                          <h4> To Unlock Your Certificate </h4>
+                          <span> Complate 85% of the Course </span><br>
+                          
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+<!--   end of certificate popup     -->
+

@@ -1,0 +1,845 @@
+<style>
+  .dropdown-menu{
+        top: 60px !important;
+    }
+    .modal-body .email-label{
+        width: 30%;
+    }
+    .Enter-Pwd{
+        margin-bottom: 15px !important;
+        float: left;
+        width: 100%;
+    }
+    .Enter-Pwd small{
+        font-size: 13px;
+        color: #f00;
+        display: none;
+            
+    }
+    .Enter-Nw-Pwd{
+        margin-bottom: 15px !important;
+        float: left;
+        width: 100%;
+    }
+    .Enter-Nw-Pwd small{
+        font-size: 13px;
+        color: #f00;
+         display: none;
+    }
+    .Pwd-Confirmation{
+         margin-bottom: 15px !important;
+        float: left;
+        width: 100%;
+    }
+    .Pwd-Confirmation small{
+        font-size: 13px;
+        color: #f00;
+         display: none;
+    }
+    #Success-Msg{
+        display: none;
+    }
+    .Success-Msg{
+        font-size: 20px;
+        text-align: center;
+        padding: 65px 0px;
+    }
+    .search-people {
+    position: absolute;
+    top: 24px;
+    left: 280px;
+    cursor: pointer;
+}
+    .form-control-width{
+        width: 300px;
+    }
+
+    .navbar-default .navbar-nav.navbar-nav-bordered > li{
+        border-right: none;
+    }
+    
+    .No_Course{
+        text-align: center;
+    float: left;
+    width: 100%;
+    font-size: 40px;
+    }
+</style>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top navbar-size-large navbar-size-xlarge paper-shadow" data-z="0" data-animated role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand navbar-brand-logo app_logo" style="border:none;width: 225px;float: left;">
+        <a ui-sref="#">
+            <img src="images/skillogic_logo.png"/>
+        </a>
+      </div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="main-nav">
+      
+      <div class="navbar-right">
+        <ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
+          <!-- user -->
+          <li class="dropdown user">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu Drp_Dwn_List" role="menu">
+              
+              <li><a data-toggle="modal" href="#change-password"> Change Password</a></li>
+              <li><a ui-sref="login"> Logout</a></li>
+            </ul>
+          </li>
+          <!-- // END user -->
+        </ul>
+       <!-- <a ui-sref="login" class="navbar-btn btn btn-primary">Log In</a>-->
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+
+  </div>
+</div>
+
+<div class="parallax bg-white page-section course_browse">
+  <div class="container" data-opacity="true">
+    <div class="media v-middle" style="width:50%;float:left;">
+      <div class="media-body">
+        <h1 class="text-display-2 margin-none" style="font-size:28px;"> My Courses </h1>
+        <p class="text-light lead">Browse through thousands of lessons.</p>
+      </div>
+    </div>
+      <div style="float:right;width:30%;">
+      <div class="media-right">
+              <div class="form-group form-control-material static  form-control-width">
+                  <input type="text" name="title" id="title" placeholder="Search" class="form-control used"/><i class="fa fa-fw fa-search search-people"></i>
+                  
+                  <!--<label for="title" >Enter Topic Name</label>-->
+                </div>
+            </div>
+      
+      </div>
+      
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="page-section">
+    <div class="row">
+
+      <div class="col-md-9">
+
+        <div class="row col-md-12" data-toggle="isotope">
+          
+          <div class="item col-xs-12 col-sm-6 col-lg-4 course_detail_box">
+            <div class="panel panel-default paper-shadow" style="height:330px;" data-z="0.5">
+
+                
+            <div class="btn-group card_actiongroup">
+              <a aria-expanded="false" class="md-more-vert card_actionbtn dropdown-toggle ripple" data-toggle="dropdown">
+              </a>
+              <ul style="height: auto; display: none; overflow: visible; top: 100%; opacity: 0;margin: 0px 0px 0px 60px !important;" class="dropdown-menu">
+                <li><a href="#">View Detail</a></li>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Interest</a></li>
+                <!--<li class="divider"></li>
+                <li><a href="#">Separated link</a></li>-->
+              </ul>
+            </div>
+                
+              <div class="cover overlay cover-image-full hover">
+                <span class="img icon-block height-150"></span>
+                <a ui-sref="website-courses.single" class="padding-none overlay overlay-full icon-block">
+                    <img src="images/skillogic_addbanner.jpg" width="255" height="150">
+                  <!--<span class="v-center">
+                <i class="fa fa-css3"></i>
+            </span>-->
+                </a>
+                <!--<a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                  <span class="v-center">
+                <span class="btn btn-circle btn-primary btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                  </span>
+                </a>-->
+
+              </div>
+
+              <div class="panel-body body-padding">
+                <h4 class="text-headline margin-v-0-10"><a ui-sref="website-courses.single">Awesome CSS with LESS Processing</a></h4>
+
+              </div>
+                <div class="date_exp" style="height:20px;">
+                
+                    <small >Expiry Date :</small> <span> 22 - 06 - 2016</span>
+                </div>
+                
+                <div class="course_complete">
+                    <small>Course Completion</small>
+                    
+                </div>
+                <div id="course_com"></div>
+
+                
+              <!--<hr class="margin-none" />
+              <div class="panel-body">
+                
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi delectus, excepturi.</p>
+                  
+              </div>-->
+                
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-lg-4 course_detail_box">
+            <div class="panel panel-default paper-shadow" style="height:330px;" data-z="0.5" >
+
+                 <div class="btn-group card_actiongroup">
+              <a aria-expanded="false" class="md-more-vert card_actionbtn dropdown-toggle ripple" data-toggle="dropdown">
+              </a>
+              <ul style="height: auto; display: none; overflow: visible; top: 100%; opacity: 0;margin: 0px 0px 0px 60px !important;" class="dropdown-menu">
+                <li><a href="#">View Detail</a></li>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Interest</a></li>
+                <!--<li class="divider"></li>
+                <li><a href="#">Separated link</a></li>-->
+              </ul>
+            </div>
+                
+                
+              <div class="cover overlay cover-image-full hover">
+                <span class="img icon-block height-150 bg-color"></span>
+                <a ui-sref="website-courses.single" class="padding-none overlay overlay-full icon-block bg-color">
+                <img src="images/default_pic.jpg" width="252" height="150">
+                  <!--<span class="v-center">
+                <i class="fa fa-windows"></i>
+            </span>-->
+                </a>
+
+                <!--<a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                  <span class="v-center">
+                <span class="btn btn-circle btn-red-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                  </span>
+                </a>-->
+
+              </div>
+
+              <div class="panel-body body-padding">
+                <h4 class="text-headline margin-v-0-10" ><a ui-sref="website-courses.single">Vagrant Portable Environments</a></h4>
+
+              </div>
+                
+                <div class="date_exp">
+                
+                    <small>Expiry Date :</small> <span> 22 - 06 - 2016</span>
+                    
+                </div>
+                <div class="course_complete">
+                    
+                    <small>Course Completion</small>
+                    
+                </div>
+               
+                
+              <!--<hr class="margin-none" />
+              <div class="panel-body">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi delectus, excepturi.</p>
+
+              </div>-->
+
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-lg-4 course_detail_box">
+            <div class="panel panel-default paper-shadow" style="height:330px;" data-z="0.5">
+
+                 <div class="btn-group card_actiongroup">
+              <a aria-expanded="false" class="md-more-vert card_actionbtn dropdown-toggle ripple" data-toggle="dropdown">
+              </a>
+              <ul style="height: auto; display: none; overflow: visible; top: 100%; opacity: 0;margin: 0px 0px 0px 60px !important;" class="dropdown-menu">
+                <li><a href="#">View Detail</a></li>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Interest</a></li>
+                <!--<li class="divider"></li>
+                <li><a href="#">Separated link</a></li>-->
+              </ul>
+            </div>
+                
+                
+              <div class="cover overlay cover-image-full hover">
+                <span class="img icon-block height-150"></span>
+                <a ui-sref="website-courses.single" class="padding-none overlay overlay-full icon-block">
+                    <img src="images/skillogic_addbanner.jpg" width="255" height="150">
+                  <!--<span class="v-center">
+                <i class="fa fa-wordpress"></i>
+            </span>-->
+                </a>
+
+                <!--<a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                  <span class="v-center">
+                <span class="btn btn-circle btn-orange-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                  </span>
+                </a>-->
+
+              </div>
+
+              <div class="panel-body body-padding">
+                <h4 class="text-headline margin-v-0-10" style="font-size:20px;"><a ui-sref="website-courses.single">WordPress Theme Development</a></h4>
+
+              </div>
+                
+                <div class="date_exp">
+                
+                    <small>Expiry Date :</small> <span> 22 - 06 - 2016</span>
+                    
+                </div>
+                <div class="course_complete">
+                    
+                    <small>Course Completion</small>
+                    
+                </div>
+                
+              <!--<hr class="margin-none" />
+              <div class="panel-body">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi delectus, excepturi.</p>
+
+              </div>-->
+
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-lg-4 course_detail_box">
+            <div class="panel panel-default paper-shadow" style="height:330px;" data-z="0.5">
+
+                 <div class="btn-group card_actiongroup">
+              <a aria-expanded="false" class="md-more-vert card_actionbtn dropdown-toggle ripple" data-toggle="dropdown">
+              </a>
+              <ul style="height: auto; display: none; overflow: visible; top: 100%; opacity: 0;margin: 0px 0px 0px 60px !important;" class="dropdown-menu">
+                <li><a href="#">View Detail</a></li>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Interest</a></li>
+                <!--<li class="divider"></li>
+                <li><a href="#">Separated link</a></li>-->
+              </ul>
+            </div>
+                
+                
+              <div class="cover overlay cover-image-full hover">
+                <span class="img icon-block height-150"></span>
+                <a ui-sref="website-courses.single" class="padding-none overlay overlay-full icon-block">
+                    <img src="images/skillogic_addbanner.jpg" width="255" height="150">
+                  <!--<span class="v-center">
+                <i class="fa fa-jsfiddle"></i>
+            </span>-->
+                </a>
+
+                <!--<a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                  <span class="v-center">
+                <span class="btn btn-circle btn-purple-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                  </span>
+                </a>-->
+
+              </div>
+
+              <div class="panel-body body-padding">
+                <h4 class="text-headline margin-v-0-10" style="font-size:20px;"><a ui-sref="website-courses.single">Browserify: Writing Modular JavaScript</a></h4>
+
+              </div>
+                
+                <div class="date_exp">
+                
+                    <small >Expiry Date :</small> <span > 22 - 06 - 2016</span>
+                    
+                </div>
+                <div class="course_complete">
+                    
+                    <small>Course Completion</small>
+                    
+                </div>
+                
+                
+              <!--<hr class="margin-none" />
+              <div class="panel-body">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi delectus, excepturi.</p>
+
+              </div>-->
+
+            </div>
+          </div>
+          <div class="item col-xs-12 col-sm-6 col-lg-4 course_detail_box">
+            <div class="panel panel-default paper-shadow" style="height:330px;" data-z="0.5">
+
+            <div class="btn-group card_actiongroup">
+              <a aria-expanded="false" class="md-more-vert card_actionbtn dropdown-toggle ripple" data-toggle="dropdown">
+              </a>
+              <ul style="height: auto; display: none; overflow: visible; top: 100%; opacity: 0;margin: 0px 0px 0px 60px !important;" class="dropdown-menu">
+                <li><a href="#">View Detail</a></li>
+                <li><a href="#">Share</a></li>
+                <li><a href="#">Interest</a></li>
+                <!--<li class="divider"></li>
+                <li><a href="#">Separated link</a></li>-->
+              </ul>
+            </div>
+                
+                
+              <div class="cover overlay cover-image-full hover">
+                <span class="img icon-block height-150  text-white"></span>
+                <a ui-sref="website-courses.single" class="padding-none overlay overlay-full icon-block  text-white">
+                    <img src="images/skillogic_addbanner.jpg" width="255" height="150">
+                  <!--<span class="v-center">
+                <i class="fa fa-cc-visa"></i>
+            </span>-->
+                </a>
+
+                <!--<a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                  <span class="v-center">
+                <span class="btn btn-circle btn-pink-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                  </span>
+                </a>-->
+
+              </div>
+
+              <div class="panel-body body-padding">
+                <h4 class="text-headline margin-v-0-10" style="font-size:20px;"><a ui-sref="website-courses.single">Super Easy Online Payments with Stripe</a></h4>
+              </div>
+                
+                <div class="date_exp">
+                
+                   <small>Expiry Date :</small> <span> 22 - 06 - 2016</span>
+                </div>
+                <div class="course_complete">
+                    <small>Course Completion</small>
+                    
+                </div>
+                
+                
+              <!--<hr class="margin-none" />
+              <div class="panel-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet commodi delectus, excepturi.</p>
+              </div>-->
+            </div>
+          </div>
+            
+        </div>
+
+        <br/>
+        <br/>
+          
+          <div class="No_Course">
+           
+              No, Course Found
+          
+          </div>
+      </div>
+        
+    <div class="col-md-3 courses_trending">
+        
+        <h4 style="margin-top:-26px;">Trending Courses</h4>
+           <ul> 
+               <li>
+            <div class="trending_courses">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+                   </li>
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+               
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+               
+               <li>
+            <div class="trending_courses" style="margin-top:30px;">
+                <img src="images/skillogic_addbanner.jpg">
+                <label>Project Management Program</label>
+            </div>
+            </li>
+        </ul>
+        
+    </div>
+       
+        
+      <div class="col-md-3" style="display:none;">
+
+        <div class="panel panel-default" data-toggle="panel-collapse" data-open="true">
+          <div class="panel-heading panel-collapse-trigger">
+            <h4 class="panel-title">Category</h4>
+          </div>
+          <div class="panel-body list-group">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <span class="badge pull-right">120+</span>
+                <a class="list-group-link" href="index.html">Design</a>
+              </li>
+              <li class="list-group-item active">
+                <span class="badge pull-right">30+</span>
+                <a class="list-group-link" href="index.html">Programming</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">40+</span>
+                <a class="list-group-link" href="index.html">WordPress</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">60+</span>
+                <a class="list-group-link" href="index.html">Workflow</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">15+</span>
+                <a class="list-group-link" href="index.html">HTML</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">25+</span>
+                <a class="list-group-link" href="index.html">CSS</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">35+</span>
+                <a class="list-group-link" href="index.html">iOS</a>
+              </li>
+              <li class="list-group-item">
+                <span class="badge pull-right">20+</span>
+                <a class="list-group-link" href="index.html">Free</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="panel panel-default" data-toggle="panel-collapse" data-open="false">
+          <div class="panel-heading panel-collapse-trigger">
+            <h4 class="panel-title">Price</h4>
+          </div>
+          <div class="panel-body">
+            <div class="form-group input-group margin-none">
+              <div class="row margin-none">
+                <div class="col-xs-6 padding-none">
+                  <input class="form-control" type="text" placeholder="Min .." />
+                </div>
+                <div class="col-xs-6 padding-none">
+                  <input class="form-control" type="text" placeholder="Max .." />
+                </div>
+              </div>
+              <div class="input-group-btn">
+                <button type="button" class="btn btn-primary"><i class="fa fa-search"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h4>Featured</h4>
+        <div class="slick-basic slick-slider" data-items="1" data-items-lg="1" data-items-md="1" data-items-sm="1" data-items-xs="1">
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-default"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-default">
+                        <span class="v-center">
+                            <i class="fa fa-github"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-white btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Github Webhooks for Beginners</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-primary"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-primary">
+                        <span class="v-center">
+                            <i class="fa fa-css3"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-primary btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Awesome CSS with LESS Processing</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-lightred"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-lightred">
+                        <span class="v-center">
+                            <i class="fa fa-windows"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-red-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Portable Environments with Vagrant</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-brown"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-brown">
+                        <span class="v-center">
+                            <i class="fa fa-wordpress"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-orange-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">WordPress Theme Development</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-purple"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-purple">
+                        <span class="v-center">
+                            <i class="fa fa-jsfiddle"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-purple-500 btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Modular JavaScript with Browserify</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="panel panel-default paper-shadow" data-z="0.5" data-hover-z="1" data-animated>
+              <div class="panel-body">
+                <div class="media media-clearfix-xs">
+                  <div class="media-left">
+                    <div class="cover width-90 width-100pc-xs overlay cover-image-full hover">
+                      <span class="img icon-block s90 bg-default"></span>
+                      <span class="overlay overlay-full padding-none icon-block s90 bg-default">
+                        <span class="v-center">
+                            <i class="fa fa-cc-visa"></i>
+                        </span>
+                      </span>
+                      <a ui-sref="website-courses.single" class="overlay overlay-full overlay-hover overlay-bg-white">
+                        <span class="v-center">
+                            <span class="btn btn-circle btn-white btn-lg"><i class="fa fa-graduation-cap"></i></span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading margin-v-5-3"><a ui-sref="website-courses.single">Easy Online Payments with Stripe</a></h4>
+                    <p class="small margin-none">
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                      <span class="fa fa-fw fa-star-o text-yellow-800"></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+<section class="footer-section">
+  <div class="container">
+    <div class="row">
+        <p class="text-subhead">
+          &copy; 2016 Skillogic. All Rights Reserved
+        </p>
+
+      </div>
+    </div>
+</section>
+
+
+<!-- popup for change password -->
+
+<div class="modal fade change-password" id="change-password" role="dialog">
+    <div class="modal-dialog ">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="top:150px;">
+        <div class="modal-header">
+          <button aria-hidden="true" data-dismiss="modal" class="close symbl-close" type="button">×</button>
+              <h3 id="myModalLabel">Change Password</h3>
+        </div>
+        <div class="modal-body" id="Change_Pwd">
+            <div class="form-group  Enter-Pwd">
+                  <label for="" class="control-label email-label"> Enter Password : </label>
+                  <div class="input-txt">
+                    <div class="form-control-material static">
+                      <div class="input-group">
+                        <input type="text" class="form-control used" id="website" placeholder="Enter Password">
+                          <small>Please enter password</small>
+                          <small>Enter password is incorrect</small>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group Enter-Nw-Pwd">
+                  <label for="" class="control-label email-label"> New Password : </label>
+                  <div class="input-txt">
+                    <div class="form-control-material static">
+                      <div class="input-group">
+                        <input type="password" class="form-control used" id="website" placeholder="Enter new Password">
+                          <small>Please enter password</small>
+                          <small>Password Should be min 6 charaters</small>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group Pwd-Confirmation">
+                  <label for="" class="control-label email-label"> Confirm Password :</label>
+                  <div class="input-txt">
+                    <div class="form-control-material static">
+                      <div class="input-group">
+                        <input type="password" class="form-control used" id="website" placeholder="Re-enter password">
+                          <small>Please enter password</small>
+                          <small>You entered password mismatched</small>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btnError">
+        <button class="btn-submit">Save</button>
+        </div>
+            
+        </div>
+          <div id="Success-Msg" class="Success-Msg">
+            
+                Your Password has been <br><br> Changed Successfully
+              
+              <div>
+            <button class="btn-submit" data-dismiss="modal" ui-sref="website-courses.list">ok</button>
+            </div>
+            
+            </div>
+          
+      </div>
+      
+    </div>
+  </div>
+
+
+<!-- end popup -->
+
+<script>
+$(document).ready(function(){
+    $(".btnError").click(function(){
+        $("#Change_Pwd").hide();
+        $("#Success-Msg").show();
+    });
+    
+});
+
+
+</script>
+

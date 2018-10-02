@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="app" data-ng-controller="AppCtrl" ng-class="app.settings.htmlClass">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>skill logic</title>
+  <!-- Vendor CSS BUNDLE
+    Includes styling for all of the 3rd party libraries used with this module, such as Bootstrap, Font Awesome and others.
+    TIP: Using bundles will improve performance by reducing the number of network requests the client needs to make when loading the page. -->
+    
+  <link href="css/vendor/all.css" rel="stylesheet">
+  <link href="css/custom_style.css" rel="stylesheet">
+  <link href="css/slide_component.css" rel="stylesheet">
+  <link href="css/slide_demo.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/video-js.css" rel="stylesheet">
+  <link href="css/app/app.css" rel="stylesheet">
+  <!--<link href="css/jquery-ui.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+</head>
+
+<body ng-class="app.settings.bodyClass">
+
+  <div data-ui-view class="ui-view-main"></div>
+
+  <!-- Inline Script for colors and config objects; used by various external scripts; -->
+  <script>
+    var colors = {
+      "danger-color": "#e74c3c",
+      "success-color": "#81b53e",
+      "warning-color": "#f0ad4e",
+      "inverse-color": "#2c3e50",
+      "info-color": "#2d7cb5",
+      "default-color": "#6e7882",
+      "default-light-color": "#cfd9db",
+      "purple-color": "#9D8AC7",
+      "mustard-color": "#d4d171",
+      "lightred-color": "#e15258",
+      "body-bg": "#f6f6f6"
+    };
+    var config = {
+      theme: "angular",
+      skins: {
+        "default": {
+          "primary-color": "#42a5f5"
+        }
+      }
+    };
+  </script>
+    
+<!--<script>
+ $(document).ready( function() {
+    $( "#accordion" ).accordion();
+  } );    
+</script>-->
+    
+<!--<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.js"></script>-->
+    
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="js/vendor/all.js"></script>
+<script src="js/progressbar.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/videojs-ie8.min.js"></script>
+<script src="js/video.js"></script>
+<script src="js/app/app.js"></script>
+</body>
+
+</html>

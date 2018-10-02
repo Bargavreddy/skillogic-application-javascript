@@ -1,0 +1,1880 @@
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url(../css/fonts/OpenSans-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url(../css/fonts/OpenSans-Semibold.ttf)
+}
+body {
+    font-family: 'Open Sans Regular' !important;
+}
+
+.btn-facebook{
+    float: left;
+    width: 42%;
+    /* border: 1px solid #ddd; */
+    cursor: pointer;
+    margin: 0px 13px;
+    font-size: 14px;
+    padding: 6px 3px;
+    color: #fff;
+    background-color: #50bbd9;
+    font-weight: bold;
+    
+}
+.btn-google{
+    float: left;
+    width: 45%;
+    /* border: 1px solid #ddd; */
+    /*padding: 6px;*/
+    cursor: pointer;
+    color: #fff;
+    background-color: #f44336;
+    font-weight: bold;
+}
+.btn-linkedin{
+    float: left;
+    width: 27%;
+    /* border: 1px solid #ddd; */
+    margin: 0px 12px;
+    padding: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #42a5f5;
+    font-weight: bold;
+    
+}
+
+.login_socialnetworks{
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.width-75 {
+    width: 75% !important;
+}
+.width-25 {
+    width: 25% !important;
+}
+.padlr0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.padtop0 {
+    padding-top: 0px !important;
+}
+.navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 200px !important;
+	display: inline-block !important;
+	vertical-align: middle;
+	/*margin: -25px 0px 0px !important;*/
+    margin: 0px !important;
+    cursor: pointer;
+}
+.navbar-brand.navbar-brand-logo.app_logo img {
+	width: 150px !important;
+	display: inline-block !important;
+	vertical-align: middle;
+	margin: 0px 0px 0px !important;
+}
+.card_actiongroup {
+	position: absolute;
+	float: right;
+	width: 82%;
+	text-align: right;
+}
+.card_actionbtn {
+    position: absolute !important;
+    float: right;
+    margin: 0px;
+    padding: 10px;
+    font-size: 36px;
+    cursor: pointer;
+    color: #FFF;
+    z-index: 99;
+}
+a.card_actionbtn {
+    text-decoration: none !important;
+    box-shadow: none !important;
+    color: #FFF;
+    
+}
+.comment_box {
+    width: 80%;
+    padding: 10px 10px !important;
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 0px 2px 0px #CCC;
+}
+.comment_box .form-control-material {
+    height: 100px;
+}
+.comment_box .form-control-material textarea.form-control {
+    height: 83px;
+    background-color: #f7f7f7;
+    padding: 05px 10px;
+}
+.pad_bor_none {
+    padding: 0px !important;
+    border: 0px solid #FFF !important;
+}
+.session_list {
+    position: absolute;
+    z-index: 9;
+    background-color: transparent;
+    overflow-y: auto;
+    height: auto;
+    min-height: 500px;
+   max-height: 100%;
+}
+.session_list .list-group-menu > .list-group-item > a {
+    padding: 10px 15px 10px 35px;
+    cursor: pointer;
+}
+
+.session_list .list-group-menu > .list-group-item > a:hover {
+    background-color: #fcfcfc;
+}
+.session_list .list-group-item {
+    border-bottom: 0px solid #ccc !important;
+}
+
+.note_box {
+    width: 100%;
+    padding: 10px 10px !important;
+/*
+    border: 1px solid #e6e6e6;
+    box-shadow: 0px 0px 2px 0px #CCC;
+*/
+}
+
+.note_box .form-control-material.static {
+      height: 40px !important;
+    background-color: #fcfcfc;
+    padding: 10px 0px 0px 10px !important;
+    line-height: 43px;
+}
+.note_box .form-control-material {
+    height: 225px;
+}
+.note_box .form-control-material textarea.form-control {
+    height: 208px;
+     background-color: #fcfcfc;
+}
+.comment_send_btn {
+    text-align: center;
+    margin: 15px 0px 0px;
+}
+.certificate_modal {
+    
+}
+.certificate_modal_bdy {
+    width: 100%;
+    text-align: center;
+}
+.certificate_modal_bdy h4 {
+    width: 100%;
+    text-align: center;
+}
+.certificate_modal_bdy .cer_img {
+    width: 100%;
+    text-align: center;
+}
+.certificate_modal_bdy .cer_img img {
+    width: auto;
+}
+.certificate_modal_bdy .cer_content {
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+}
+.certificate_modal_bdy .cer_content h4 {
+     width: 100%;
+    text-align: center;
+}
+
+.certificate_modal_bdy .cer_content span {
+     width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.certificate_modal_bdy .cer_content small {
+     width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+h4.lesson_title {
+    width: 64%;
+    float: left;
+    color: #7e7e7e;
+    font-family: 'Open Sans Regular',sans-serif !important;
+}
+.lesson_play_icon {
+    font-size: 12px;
+    color: #CCC;
+    margin: -16px 0px 0px 3px;
+    position: absolute;
+    z-index: 99;
+}
+#lessonAllTopic {
+  margin: 15px 0px 0px 20px;
+  width: 100px;
+  height: 6px;
+  position: relative;
+    float: left;
+}
+#lesson_video_progress_all {
+  margin: 10px 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+#lesson_video_progress {
+  margin: 0px;
+  width: 18px;
+  height: 18px;
+}
+#lesson_video_progress_2 {
+  margin: 0px;
+  width: 18px;
+  height: 18px;
+}
+span.collapse_plusicon {
+    position: absolute;
+    margin: 16px 0px 0px -7px;
+}
+.fa.fa-plus {
+    font-size: 14px;
+    font-weight: 300 !important;
+    margin: 0px 0px 0px;
+    color: #7e7e7e;
+}
+.note_box .form-control-material label {
+    color: #CCC;
+     padding: 05px 10px 0px;
+}
+.comment_box .form-control-material label {
+    color: #666;
+    padding: 10px;
+}
+.note_tab {
+    border: 0px solid #e6e6e6;
+}
+.note_tab .nav-tabs > li.active > a {
+    border-width: 0px 0px 3px 0px;
+    border-style: solid;
+    border-color: #42a5f5;
+}
+#viewNotes {
+   height: 90%;
+overflow-x: hidden;
+overflow-y: auto;
+position: absolute;
+}
+#viewNotes .panel > .list-group:last-child, #view_Answer .panel > .list-group:last-child {
+    padding-bottom: 0px;
+}
+#view_Answer  {
+    height: 90%;
+overflow-x: hidden;
+overflow-y: auto;
+position: absolute;
+}
+#view_Answer .text-subhead span {
+    width: 100%;
+    float: left;
+    color: #4d4d4d;
+}
+ #view_Answer .list-group-item small {
+    width: 100%;
+    float: left;
+     color: #4d4d4d;
+     padding: 0px 0px 0px;
+     margin: 0px 0px 10px;
+     border-bottom: 0px solid #e6e6e6;
+     font-size: 12px;
+}
+#view_Answer .list-group-item  p {
+    color: #808080;
+    
+}
+.cou_panel {
+    width: 100%;
+    float:left;
+    margin: 0px;
+    background-color: #FFF;
+}
+.cou_panel .left_side_20 {
+    width: 20%;
+    float: left;
+    margin: 0px;
+}
+.left_side_20 .cour_list {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 0px 0px;
+}
+.syllabusbtn {
+    width: 14%;
+    float: left;
+    padding: 15px 25px 15px 45px !important;
+    font-size: 16px;
+}
+.left_side_20 .cour_list .syllabusbtn {
+    float: left;
+    border-radius: 0px;
+    width: 90%;
+    padding: 16px 0px 20px 25%;
+}
+.left_side_20 .cour_list .syllabusbtn span {
+    font-size: 20px;
+}
+.slide_st-trigger-effects .syllabusbtn .fa.fa-bars {
+    color: #FFF;
+    font-size: 21px;
+    margin: 02px 0px 0px;
+}
+.left_side_20 .cour_list span {
+    font-size: 15px;
+    color: #FFF;
+    margin: 0px;
+    padding: 0px;
+}
+.left_side_20 .panel.panel-default, .left_side_20 .panel-heading {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.left_side_20 .panel-collapse-trigger.panel-heading::after {
+    display: none;
+}
+.left_side_20 .panel-body {
+    width: 400px;
+    z-index: 99;
+    position: absolute;
+    margin-top: 80px;
+}
+.cou_panel .middle_col_60 {
+    width: 60%;
+    float: left;
+    margin: 0px;
+}
+.middle_col_60 {
+    width: 50%;
+    float: left;
+    margin: 0px;
+    padding-left: 30px;
+}
+.middle_col_60 .cour_name {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+.middle_col_60 .cour_name span {
+    width: 100%;
+    text-align: left;
+    font-family: 'Open Sans Regular',sans-serif ;
+    font-size: 18px;
+    color: #4d4d4d;
+    float: left;
+    padding: 5px 0px 2px;
+}
+.middle_col_60 .cour_name small {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    color: #808080;
+    float: left;
+    padding: 03px 0px 05px;
+}
+.cou_panel .right_side_20 {
+    width: 18%;
+    float: right;
+    margin: 0px;
+}
+.right_side_20 .learnbtn {
+    float: left;
+    border-radius: 0px;
+    width: 100%;
+    padding: 19px 0px 20px 25%;
+}
+.right_side_20 .learnbtn .fa.fa-clipboard {
+    color: #FFF;
+    font-size: 21px;
+    margin: 02px 0px 0px;
+}
+.right_side_20 .learnbtn span {
+    font-size: 18px;
+}
+.learning_Tool {
+    position: absolute;
+    margin: 0px 0px 0px 0px;
+    z-index: 10;
+    width: 100%;
+}
+.displayViewList {
+    display: block !important;
+}
+
+
+  body {
+      /* Panel animation should last 200ms */
+      transition: transform .2s;
+      -webkit-transition: -webkit-transform .2s;
+    }
+
+    /* Body animation when left panel is opened */
+    body.ps-active {
+      -webkit-transform: translateX(260px);
+      -ms-transform: translateX(260px);
+      transform: translateX(260px);
+    }
+
+    /* Body animation when right panel is opened */
+    body.ps-active-right {
+      -webkit-transform: translateX(-260px);
+      -ms-transform: translateX(-260px);
+      transform: translateX(-260px);
+    }
+
+    /* Panel styles */
+    .session_list .panel {
+      position: fixed;
+      top: 0;
+      width: 220px;
+      height: 100%;
+      padding: 20px;
+      background-color: #333;
+      color: #fff;
+      box-shadow: inset 0 0 5px 5px #222;
+    }
+
+    #left-panel {
+      left: 0;
+
+      /* Hide panel on the left of the page. When this panel is opened the
+      class .ps-active will be apllied to body, and it's X translation will
+      reveal the panel. */
+      -webkit-transform: translateX(-260px);
+      -ms-transform: translateX(-260px);
+      transform: translateX(-260px);
+    }
+
+    #right-panel {
+      right: 0;
+
+      /* Hide panel on the right of the page. When this panel is opened the
+      class .ps-active-right will be apllied to body, and it's X translation
+      will reveal the panel. */
+      -webkit-transform: translateX(260px);
+      -ms-transform: translateX(260px);
+      transform: translateX(260px);
+    }
+
+    #page {
+      width: 940px;
+      height: 400px;
+      padding: 20px;
+      margin: 0 auto;
+      background: white;
+    }
+.session_list .panel.panel-default {
+    width: 100%;
+    padding: 0px;
+}
+.tipstool_icons {
+    width: 22%;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+}
+.tipstool_icons:hover {
+    background-color: transparent;
+}
+.tipstool_icons img.notes_icon {
+    width: 24px;
+    margin: 02px 0px 0px;
+}
+.tipstool_icons .noteCol, .tipstool_icons .questionDiv {
+    width: 33%;
+    float: left;
+    text-align: center;
+    margin: 04px 0px 0px;
+    cursor: pointer;
+}
+.tipstool_icons .noteCol small, .tipstool_icons  .questionDiv small {
+    width: 100%;
+    text-align: center;
+    float: left;
+    color: #808080;
+}
+.noteCol button {
+    background-color: transparent;
+    border: none;
+    margin: 02px 0px 0px;
+    padding: 0px;
+}
+.noteCol button:hover {
+    background-color: transparent;
+    border: none;
+}
+.tipstool_icons img.questionmark_Icon {
+    width: 24px;
+    height: 24px;
+    margin: 02px 0px 0px;
+}
+.certificate_btn {
+    float: right;
+    margin: 10px 0px 0px;
+}
+.height-500 {
+    height: 500px;
+}
+.height_70 {
+    height: 70% !important;
+}
+/* Video player */
+.video_playerDiv {
+    width: 100%;
+    height: 480px;
+}
+.vjs-big-play-button {
+    top: 40% !important;
+    left: 45% !important;
+}
+.btn-takenotes{
+    display: none !important;
+}
+/*.btnfordropdown{
+    display: none !important;
+}*/
+
+.noteCol label{
+    padding:5px;
+    font-size:14px;
+    color:#4d4d4d;
+}
+.qstnsubmit {
+    text-align:center;
+    margin-top:20px;
+}
+.qstnsubmit label{
+    color:#3d8b40;
+    font-size:16px;
+}
+.notessaved{
+    text-align:center;
+    margin-top:20px;
+}
+.notessaved label{
+    color:#3d8b40;
+    font-size:16px;
+}
+
+.text-headline a:hover{
+    text-decoration: none !important;
+}
+.date_exp{
+    padding:0px 0px 0px 16px;
+}
+.date_exp small{
+    font-size:12px;
+    color:#9c9c9c;
+}
+.date_exp span{
+    font-size:14px;
+    padding:0px 0px 0px 5px;
+    color:#4d4d4d;
+}
+.course_complete{
+    padding:10px 0px 0px 16px;
+}
+.course_complete small{
+    font-size:12px;
+    color:#9c9c9c;
+}
+#course_com{
+    
+    width:94%;
+    padding:0px 0px 0px 16px;
+    position:relative;
+}
+.body-padding{
+    padding:15px 0px 0px 15px;
+}
+.course_detail_box{
+    width: 275px;
+    padding: 0px;
+}
+.trending_courses img{
+    position: relative;
+    width: 320px;
+    height: 150px;
+}
+.trending_courses label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    float: left;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    padding: 6px;
+    margin: 0px;
+    font-size: 13px;
+    font-weight: 500;
+        
+}
+.courses_trending{
+    float: right;
+}
+.course_browse{
+    padding: 15px 0px !important;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.17) !important;
+}
+.courses_trending ul{
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    float: left;
+}
+.courses_trending ul li{
+    position: relative;
+}
+
+.nameofcourse{
+    width: 1319px;
+    padding-left: 0px !important;
+    padding-right: 0px;
+}
+.bg-color{
+    
+    background-color:#42a5f5;
+}
+.body-padding {
+    font-size: 20px;
+}
+.Detls-course{
+    width:20%;
+    float:left;
+}
+.Detls-course h1{
+    font-size:28px;
+    padding-bottom:10px;
+}
+.nameof_Course{
+    float:left;
+    width:70%;
+    padding-top:40px !important;
+}
+.About_Course{
+    padding-left:0px;
+    padding-top:22px;
+}
+.assigned_Date {
+    padding-left:0px;
+}
+.assigned_Date small{
+    float:left;
+    width:100%;
+    color: #42a5f5;
+    font-size:92%;
+}
+.exipired_Date{
+   padding-left:0px;
+}
+.exipired_Date small{
+   float:left;
+    width:100%;
+    color: #42a5f5;
+    font-size:92%;
+}
+.text-headline{
+    font-size: 1.84rem;
+    font-weight: 400;
+    line-height: 2.46rem;
+   /* height: 64px;*/
+    width: 100%;
+    overflow: hidden;
+}
+/*.percentg-complete small{
+    float: left;
+    width: 30%;
+    font-size:16px;
+    border: 3px solid #0077aa;
+    border-radius: 50%;
+     padding:8px 4px;
+    margin-top:-21px;
+}*/
+
+.percentg-complete{
+    margin-top: -42px;
+}
+.percentg-complete label{
+    float:left;
+    width:100%;
+}
+.timingforquestn{
+    float: right !important;
+    color: #4d4d4d !important;
+    text-align: right !important;
+}
+.AnsforQues{
+    width: 100%;
+    float: left;
+    border-top: 1px solid #e6e6e6;
+    padding: 10px 0px;
+}
+.video-progress{
+    float:left;
+}
+.video-instalation{
+    width:80%;
+    float:left;
+}
+.time-min{
+    width:80%;
+    float:left;
+    padding: 0px 29px;
+}
+.div-view-btn{
+    float: right;
+    text-align: right;
+    width: 20%;
+    margin-top:-15px;
+}
+.btn-view-detail{
+    padding:4px 15px;
+    font-size: 10px;
+}
+.boder-panel{
+    border: none;
+}
+.question-timings{
+    float:right;
+    text-align:right;
+}
+.answr-ques{
+    border-top:1px solid #e6e6e6;
+    padding-top:10px;
+}
+.remove-shadow{
+    border: none !important;
+    box-shadow: none !important;
+}
+.remove-shadow[data-z="0.5"]:after, .remove-shadow[data-hover-z="0.5"]:hover:after {
+     box-shadow: none; 
+}
+.validation-mail{
+	text-align:left;
+    font-size:12px;
+	text-align:left;
+	color:#f44336;
+    float: left;
+}
+
+.valid-password{
+	text-align:left;
+    font-size:12px;
+	text-align:left !important;
+	color:#f44336 !important;
+    float: left;
+}
+.valid-error small{
+	font-size:12px;
+	text-align:left;
+	color:#f44336;
+	text-align:left;
+}
+
+#lesson_video_progress_all {
+  margin: 10px 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.progress_lesson {
+  margin: 15px 0px 0px 20px;
+  width: 100px;
+  height: 6px;
+  position: relative;
+    float: left;
+}
+.progress_all {
+  margin: 10px 0px 0px;
+  width: 30px;
+  height: 30px;
+}
+.progress_topic {
+  margin: 0px;
+  width: 18px;
+  height: 18px;
+}
+.acount-login{
+    font-size: 14px;
+    color: #808080;
+    padding-top: 10px;
+}
+.validation-user{
+    text-align:left;
+    font-size:12px;
+	color:#f44336;
+    float: left;
+}
+
+.success-icon{
+    text-align: center;
+    border-bottom: none;
+}
+.labelforsuccess{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.labelforsuccess label{
+    font-weight: 600;
+}
+.errormsg{
+    text-align: center;
+}
+.btn-ok{
+     box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
+    color: #fff;
+    background-color: #4da6ff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    padding: 4px 20px;
+    text-shadow: #FE6 0 1px 0;
+    margin: 0px 10px 0px 0px;
+}
+.btn-ok:hover{
+    background-color: #4da6ff !important;
+}
+.btnError{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.acc-crte{
+    margin-bottom: 20px;
+}
+.login-label{
+    width: 100%;
+    float: left;
+    color: #42a5f5;
+}
+.path-list{
+    font-size: 14px;
+    
+}
+.pathfordetail{
+    list-style-type: none;
+    width: 100%;
+    float: left;
+    padding-left: 0px;
+}
+.pathfordetail li{
+    float: left;
+    color: #379aea;
+    width: auto;
+}
+.pathfordetail li label {
+	font-weight: normal;
+}
+.pathfordetail li{
+	cursor:pointer;
+}
+.pathfordetail li:last-child{
+	color: #000;
+}
+.divider{
+    padding: 0px 10px;
+    color: #808080;
+}
+.nameoftopic{
+   /* width: 70%;*/
+    text-overflow: ellipsis;
+}
+#lesson_completion_bar{
+    margin: 15px 0px 0px 20px;
+  width: 100px;
+  height: 6px;
+  position: relative;
+    float: right;
+}
+.percentg-progress{
+    font-size: 20px;
+    color: #CCC;
+    margin: 20px 0px 0px 10px;
+    position: absolute;
+    z-index: 99;
+}
+.modal-header .symbl-close {
+    margin-top: 15px;
+    color: #fff;
+    opacity: 1;
+}
+.modal-header .symbl-close:hover {
+    background-color: #0778aa;
+}
+.change-password .modal-header{
+     background-color: #0778aa;
+       padding: 10px 25px !important;
+}
+.change-password .modal-header h3{
+     color: #fff;
+    font-size: 18px;
+}
+.modal-body .labels-details{
+    float: left;
+    width: 25%;
+    margin: 0px 0px 0px 50px;
+}
+.modal-body .input-txt{
+    float: left;
+    width: 50%;
+}
+.new-pwd{
+    float: left;
+    width: 100%;
+    margin-bottom: 0px !important;
+}
+.modal-body .email-label{
+    float: left;
+    width: 13%;
+    margin: 20px 0px 0px 50px;
+    font-size: 15px;
+}
+.label-sucess{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #0077aa;
+}
+.btn-submit{
+    box-shadow: rgba(0,0,0,0.2) 0 1px 0 0;
+    color: #fff;
+    background-color: #4da6ff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    padding: 4px 20px;
+    text-shadow: #FE6 0 1px 0;
+    margin: 20px 10px 0px 0px;
+    }
+.btnError{
+    text-align: center;
+    padding-bottom: 40px;
+}
+.btn-submit:hover{
+    background-color: #4da6ff;
+}
+.timefornotes{
+    float: right;
+    text-align: right;
+}
+.view-certificate-btn{
+    float: right;
+    margin-top: -68px;
+}
+#lesson_video_progress3{
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+}
+#lesson_video_progress4{
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+}
+#lesson_video_progress5{
+    margin: 0px;
+    width: 60px;
+    height: 60px;
+}
+.cerficate-icon{
+    display: none;
+    
+}
+
+.btn-for-footer{
+    border-top: none !important;
+    text-align: center;
+}
+.ok_button{
+    padding: 4px 12px;
+}
+.Cert_D_L{
+    padding: 2px 12px;
+}
+.pdf-img{
+    padding-bottom: 20px;
+}
+/*
+.List_Lesson_1{
+    height: auto;
+    overflow-y: auto;
+    min-height: 90px;
+    max-height: 210px;
+}
+.List_Lesson_2{
+    height: auto;
+    overflow-y: auto;
+    min-height: 90px;
+    max-height: 200px;
+}
+.List_Lesson_3{
+    height: auto;
+    overflow-y: auto;
+    min-height: 90px;
+    max-height: 200px;
+}
+*/
+
+/*.lock-container{
+    display: table;
+}*/
+
+.List_Lesson{
+    overflow-y: auto;
+    height: auto;
+    min-height: 114px;
+    max-height: 700px;
+}
+
+
+/* styles for topicname and lesson name labels */
+
+.Lesson_Name{
+    padding-bottom:10px;
+    font-size:14px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    width:84%;
+    float:left;
+    font-weight: 600;
+}
+
+.Topic-Name{
+    padding-bottom:10px;
+    font-size:13px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    width:84%;
+    float:left;
+    color:#808080;
+}
+
+
+@media(min-width: 300px) and (max-width: 340px){
+    .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 130px !important;
+	margin: -10px 0px 0px !important;
+    }
+    .syllabusbtn span{
+        display: none;
+    }
+    .syllabusbtn {
+    padding: 35px 25px 15px 14px !important;
+    font-size: 16px;
+    }
+    .middle_col_60{
+        width: 100%;
+        float: left;
+        padding-left: 0px;
+    }
+    /*.lesson-topic-names{
+        margin-top: 20px;
+    }*/
+    .tipstool_icons{
+        margin: -136px 60px 0px 0px;
+        padding: 0px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        width: 70%;
+        display: none;
+    }
+    .tipstool_icons .noteCol{
+        text-align: center;
+        margin: 04px 0px 0px;
+        cursor: pointer;
+    }
+    .session_list{
+        width: 100%;
+        max-width: 280px;
+    }
+    .certificate_modal_bdy .cer_img img{
+        width: 200px;
+    }
+    .certificate_btn{
+        margin: 10px 0px 0px;
+        float: none;
+         padding-left: 180px !important;
+        display: none;
+    }
+    .slide_st-menu.right{
+        width: 100%;
+    }
+    .certificate_btn span{
+        display: none;
+    }
+    .noteCol button{
+        margin: 2px 0px 0px 30px;
+    }
+    a.card_actionbtn{
+        text-decoration: none !important;
+        box-shadow: none !important;
+        color: #000;
+        position: absolute;
+        z-index: 999999;
+    }
+    #viewNotes{
+        width: 100%;
+        max-width: 330px;
+    }
+    #slide_st-trigger-effects  button{
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .tab-content{
+        padding: 50px 20px 20px 20px !important;
+    } 
+    .btn-takenotes{
+        background-color: #fff;
+        text-align: right;
+        padding: 15px;
+    }
+    #view_Answer{
+        width: 100%;
+        max-width: 330px;
+    }
+}
+@media(min-width: 360px) and (max-width: 400px){
+    .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 130px !important;
+	margin: -10px 0px 0px !important;
+    }
+    .syllabusbtn span{
+        display: none;
+    }
+    .syllabusbtn {
+    padding: 35px 25px 15px 14px !important;
+    font-size: 28px;
+        margin-left: -20px;
+    }
+    .middle_col_60{
+        width: 100%;
+        float: left;
+        padding-left: 0px;
+    }
+    .tipstool_icons{
+        /*margin: -50px 60px 0px 0px;*/
+        padding: 0px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        width: 70%;
+        /*display: none;*/
+    }
+    .tipstool_icons .noteCol{
+        text-align: center;
+        margin: 04px 0px 0px;
+        cursor: pointer;
+    }
+    .session_list{
+        width: 100%;
+        max-width: 320px;
+    }
+    .certificate_modal_bdy .cer_img img{
+        width: 200px;
+    }
+    .certificate_btn{
+        margin: 10px 0px 0px;
+        float: none;
+         padding-left: 180px !important;
+        display: block;
+          padding-left: 270px !important;
+        display: none;
+    }
+    .btn_viewcertificate{
+        display: block;
+    }
+    
+    .slide_st-menu.right{
+        width: 100%;
+    }
+    .certificate_btn span{
+        display: none;
+    }
+    .noteCol button{
+        margin: 0px 0px 0px 120px;
+    }
+     a.card_actionbtn{
+        text-decoration: none !important;
+        box-shadow: none !important;
+        color: #000;
+        position: absolute !important;
+        z-index: 999999;
+         margin-top: 20px;
+         display: block;
+         right: -60px;
+    }
+    #viewNotes{
+        width: 100%;
+        max-width: 330px;
+    }
+    #slide_st-trigger-effects{
+        background-color: #fff !important;
+        margin: 20px 0px 0px;
+        padding: 0px 20px;
+    }
+    #slide_st-trigger-effects  button{
+        background-color: #fff !important;
+        color: #379aea !important;
+        
+    }
+    .btn-width{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .btn-width button{
+        width: 100%;
+        text-align: left;
+    }
+   /* .tab-content{
+        padding: 50px 20px 20px 20px !important;
+    } */
+    .btn-takenotes{
+        background-color: #fff;
+        text-align: right;
+        padding: 15px;
+        display: block !important;
+    }
+    #view_Answer{
+        width: 100%;
+        max-width: 330px;
+    }
+    .slide_st-menu-open{
+        margin-top: 70px;
+    }
+    .btnfordropdown ul{
+        margin: 50px 0px 0px 0px !important;
+    }
+    .card_actiongroup {
+    position: absolute;
+    float: right;
+    width: 82%;
+    text-align: right;
+    /*top: 58px;*/
+}
+    .Detls-course{
+        width: 100%;
+    }
+    .About_Course{
+        width: 100% !important;
+        padding-right: 0px;
+    }
+    .assigned_Date{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 36%;
+        float: left;
+    }
+    .exipired_Date{
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 32%;
+        float: left;
+    }
+    .percentg-complete{
+        margin-top: 5px;
+        float: left;
+        padding-left: 0px;
+    }
+    .nameofcourse{
+        width: 360px;
+    }
+    .cerficate-icon{
+        display: block;
+    }
+    #lesson_completion_bar{
+        margin: 15px 0px 0px 185px;
+        position: absolute;
+    }
+    #lessonAllTopic{
+        margin: 15px 0px 0px 180px;
+        position: absolute;
+    }
+    .view-certificate-btn{
+        position: absolute;
+        top: -185px;
+        left: -13px;
+    }
+    .notes-btn{
+        display: none;
+    }
+    .btn-info{
+        border-color: #fff !important;
+    }
+    .path-list{
+        padding-left: 13px;
+    }
+    .btn-icon-stacked i{
+        top:14px !important;
+    }
+    .height-500 {
+    height:400px !important;
+    }
+    #lesson_video_progress3{
+        margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+    #lesson_video_progress4{
+     margin: 0;
+        width: 40px;
+        height: 40px;
+        }
+    #lesson_video_progress5{
+         margin: 0;
+        width: 40px;
+        height: 40px;
+    }
+    .percentg-progress{
+        font-size: 14px;
+        margin: 10px 0px 0px 5px;
+    }
+}
+@media(min-width: 420px) and (max-width: 480px){
+   .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 130px !important;
+	margin: -10px 0px 0px !important;
+    }
+    .syllabusbtn span{
+        display: none;
+    }
+    .syllabusbtn {
+    padding: 35px 25px 15px 14px !important;
+    font-size: 16px;
+        margin-left: -20px;
+    }
+    .middle_col_60{
+        width: 100%;
+        float: left;
+        padding-left: 0px;
+    }
+    .tipstool_icons{
+       /* margin: -50px 60px 0px 0px;*/
+        padding: 0px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        width: 70%;
+        /*display: none;*/
+    }
+    .tipstool_icons .noteCol{
+        text-align: center;
+        margin: 04px 0px 0px;
+        cursor: pointer;
+    }
+    .session_list{
+        width: 100%;
+        max-width: 320px;
+    }
+    .certificate_modal_bdy .cer_img img{
+        width: 200px;
+    }
+    .certificate_btn{
+        margin: 10px 0px 0px;
+        float: none;
+         padding-left: 180px !important;
+        display: block;
+          padding-left: 270px !important;
+    }
+    .slide_st-menu.right{
+        width: 100%;
+    }
+    .certificate_btn span{
+        display: none;
+    }
+    .noteCol button{
+        margin: 2px 0px 0px 15px;
+    }
+    a.card_actionbtn{
+        text-decoration: none !important;
+        box-shadow: none !important;
+        color: #fff;
+        position: absolute;
+        z-index: 999999;
+         margin-top: -60px;
+    }
+    #viewNotes{
+        width: 100%;
+        max-width: 330px;
+    }
+    #slide_st-trigger-effects  button{
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .tab-content{
+        padding: 50px 20px 20px 20px !important;
+    } 
+    .btn-takenotes{
+        background-color: #fff;
+        text-align: right;
+        padding: 15px;
+        display: block !important;
+    }
+    #view_Answer{
+        width: 100%;
+        max-width: 330px;
+    }
+    .slide_st-menu-open{
+        margin-top: 70px;
+    }
+    .btnfordropdown ul{
+        margin: 50px 0px 0px 190px !important;
+    }
+   .card_actiongroup {
+    position: absolute;
+    float: right;
+    width: 82%;
+    text-align: right;
+    top: 58px;
+}
+    .Detls-course{
+        width: 100%;
+    }
+    .About_Course{
+        width: 100% !important;
+    }
+    .assigned_Date{
+        padding-left: 0px;
+        width: 41%;
+        float: left;
+    }
+    .exipired_Date{
+        padding-left: 0px;
+        width: 42%;
+        float: left;
+    }
+    .percentg-complete{
+        margin-top: -42px;
+        float: left;
+        padding-left: 0px;
+    }
+    .nameofcourse{
+        width: 360px;
+    }
+    .cerficate-icon{
+        display: none;
+        
+    }
+    #lesson_completion_bar{
+        margin: 15px 0px 0px 150px;
+        position: absolute;
+    }
+    #lessonAllTopic{
+        margin: 15px 0px 0px 180px;
+        position: absolute;
+    }
+    .view-certificate-btn{
+        position: absolute;
+        top: -185px;
+        left: -13px;
+    }
+}
+@media(min-width: 500px) and (max-width: 640px){
+     .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 130px !important;
+	margin: -10px 0px 0px !important;
+    }
+    .syllabusbtn span{
+        display: none;
+    }
+    .syllabusbtn {
+    padding: 35px 25px 15px 14px !important;
+    font-size: 16px;
+        margin-left: -20px;
+    }
+    .middle_col_60{
+        width: 100%;
+        float: left;
+        padding-left: 0px;
+    }
+    .tipstool_icons{
+        margin: -50px 60px 0px 0px;
+        padding: 0px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        width: 70%;
+        /*display: none;*/
+    }
+    .tipstool_icons .noteCol{
+        text-align: center;
+        margin: 04px 0px 0px;
+        cursor: pointer;
+    }
+    .session_list{
+        width: 100%;
+        max-width: 320px;
+    }
+    .certificate_modal_bdy .cer_img img{
+        width: 200px;
+    }
+    .certificate_btn{
+        margin: 10px 0px 0px;
+        float: none;
+         padding-left: 550px !important;
+        display: block;
+    }
+    .slide_st-menu.right{
+        width: 100%;
+    }
+    .certificate_btn span{
+        display: none;
+    }
+    .noteCol button{
+        margin: 2px 0px 0px 15px;
+    }
+    a.card_actionbtn{
+        text-decoration: none !important;
+        box-shadow: none !important;
+        color: #fff;
+        position: absolute;
+        z-index: 999999;
+         margin-top: -60px;
+    }
+    #viewNotes{
+        width: 100%;
+        max-width: 600px;
+    }
+    #slide_st-trigger-effects  button{
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .tab-content{
+        padding: 50px 20px 20px 20px !important;
+    } 
+    .btn-takenotes{
+        background-color: #fff;
+        text-align: right;
+        padding: 15px;
+        display: block !important;
+    }
+    #view_Answer{
+        width: 100%;
+        max-width: 330px;
+    }
+    .slide_st-menu-open{
+        margin-top: 70px;
+    }
+    .btnfordropdown ul{
+        margin: 50px 0px 0px 190px !important;
+    }
+    .card_actiongroup {
+    position: absolute;
+    float: right;
+    width: 82%;
+    text-align: right;
+    top: 58px;
+    }
+    .Detls-course{
+        width: 100%;
+    }
+    .About_Course{
+        width: 100% !important;
+    }
+    .assigned_Date{
+        padding-left: 0px;
+        width: 41%;
+        float: left;
+    }
+    .exipired_Date{
+        padding-left: 0px;
+        width: 42%;
+        float: left;
+    }
+    .percentg-complete{
+        margin-top: -42px;
+        float: left;
+        padding-left: 0px;
+    }
+    .nameofcourse{
+        width: 640px;
+    }
+    .cerficate-icon{
+        display: block;
+    }
+    #lesson_completion_bar{
+        margin: 15px 0px 0px 150px;
+        position: absolute;
+    }
+    #lessonAllTopic{
+        margin: 15px 0px 0px 180px;
+        position: absolute;
+    }
+    .view-certificate-btn{
+        position: absolute;
+        top: -185px;
+        left: -13px;
+    }
+    .notes-btn{
+        display: none;
+    }
+    
+}
+@media(min-width:700px) and (max-width:800px){
+    
+    .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 130px !important;
+	margin: -10px 0px 0px !important;
+    }
+    .syllabusbtn span{
+        display: none;
+    }
+    .syllabusbtn {
+    padding: 35px 25px 15px 14px !important;
+    font-size: 16px;
+        margin-left: -20px;
+    }
+    .middle_col_60{
+        width: 100%;
+        float: left;
+        padding-left: 0px;
+    }
+    .tipstool_icons{
+        margin: -50px 60px 0px 0px;
+        padding: 0px;
+        height: 55px;
+        background-color: transparent;
+        border: none;
+        width: 70%;
+        /*display: none;*/
+    }
+    .tipstool_icons .noteCol{
+        text-align: center;
+        margin: 04px 0px 0px;
+        cursor: pointer;
+    }
+    .session_list{
+        width: 100%;
+        max-width: 320px;
+    }
+    .certificate_modal_bdy .cer_img img{
+        width: 200px;
+    }
+    .certificate_btn{
+        margin: 10px 0px 0px;
+        float: none;
+         padding-left: 550px !important;
+        display: block;
+    }
+    .slide_st-menu.right{
+        width: 100%;
+    }
+    .certificate_btn span{
+        display: none;
+    }
+    .noteCol button{
+        margin: 2px 0px 0px 15px;
+    }
+     a.card_actionbtn{
+        text-decoration: none !important;
+        box-shadow: none !important;
+        color: #fff;
+        position: absolute;
+        z-index: 999999;
+         margin-top: -60px;
+    }
+    #viewNotes{
+        width: 100%;
+        max-width: 600px;
+    }
+    #slide_st-trigger-effects  button{
+        background-color: #fff !important;
+        color: #000 !important;
+    }
+    .tab-content{
+        padding: 50px 20px 20px 20px !important;
+    } 
+    .btn-takenotes{
+        background-color: #fff;
+        text-align: right;
+        padding: 15px;
+        display: block !important;
+    }
+    #view_Answer{
+        width: 100%;
+        max-width: 330px;
+    }
+    .slide_st-menu-open{
+        margin-top: 70px;
+    }
+    .btnfordropdown ul{
+        margin: 50px 0px 0px 190px !important;
+    }
+   .card_actiongroup {
+    position: absolute;
+    float: right;
+    width: 82%;
+    text-align: right;
+    top: 58px;
+}
+    .Detls-course{
+        width: 100%;
+    }
+    .About_Course{
+        width: 100% !important;
+    }
+    .assigned_Date{
+        padding-left: 0px;
+        width: 41%;
+        float: left;
+    }
+    .exipired_Date{
+        padding-left: 0px;
+        width: 42%;
+        float: left;
+    }
+    .percentg-complete{
+        margin-top: -42px;
+        float: left;
+        padding-left: 0px;
+    }
+    .nameofcourse{
+        width: 640px;
+    }
+    .cerficate-icon{
+        display: block;
+    }
+    #lesson_completion_bar{
+        margin: 15px 0px 0px 150px;
+        position: absolute;
+    }
+    #lessonAllTopic{
+        margin: 15px 0px 0px 180px;
+        position: absolute;
+    }
+    .tipstool_icons{
+        width: 35% !important;
+    }
+    .view-certificate-btn{
+        position: absolute;
+        top: -185px;
+        left: -13px;
+    }
+}
+@media(min-width: 1024px) and (max-width: 1130px){
+     .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 170px !important;
+	
+    }
+    .tipstool_icons{
+        width: 25%;
+    }
+    .modal-md{
+        top:-280px !important;
+    }
+    .card_actionbtn{
+        display: none;
+    }
+    .Detls-course {
+    width: 23%;
+    float: left;
+    }
+    .About_Course{
+        width: 77% !important;
+    }
+    .courses_trending{
+        float:left;
+    }
+    .col-md-9{
+        width: 67% !important;
+    }
+    .dropdown-menu{
+        display: none;
+    }
+    .nameofcourse{
+    width: 1024px;
+    padding-left: 0px !important;
+    padding-right: 0px;
+}
+     .pathfordetail{
+        padding-left: 15px;
+    }
+    .certificate_btn{
+        margin: 10px 7px 0px;
+    }
+    
+}
+@media(min-width: 1140px) and (max-width: 1152px){
+     .navbar-size-xlarge .navbar-brand.navbar-brand-logo.app_logo img {
+	width: 170px !important;
+}
+    .tipstool_icons{
+        width: 25%;
+    }
+    .modal-md{
+        top:-275px !important;
+    }
+   /* .card_actionbtn{
+        display: none;
+    }*/
+    .Detls-course {
+    width: 23%;
+    float: left;
+}
+    .About_Course{
+        width: 77% !important;
+    }
+    .courses_trending{
+        float:left;
+    }
+     .nameofcourse{
+    width: 1152px;
+    padding-left: 0px !important;
+    padding-right: 0px;
+}
+    .pathfordetail{
+        padding-left: 15px;
+    }
+    .certificate_btn{
+        margin: 10px 7px 0px;
+    }
+}
+@media(min-width: 1280px) and (max-width: 1325px){
+    .btn-takenotes{
+        display: none;
+    }
+    /*.nameofcourse{
+    width: 1280px;
+    padding-left: 0px !important;
+    padding-right: 0px;
+}*/
+    .container{
+        width: 1280px;
+    }
+    .certificate_btn{
+        margin: 10px 7px 0px;
+    }
+}
+
+
+
